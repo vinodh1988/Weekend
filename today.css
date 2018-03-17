@@ -1,0 +1,92 @@
+#slideshow{
+    margin: 30px;
+    height:300px;
+    width: 500px;
+}
+
+#slideshow img{
+    height: 100%;
+    width: 100%;
+}
+
+#form-block,#form-block2{
+    width: 400px;
+    padding: 10px;
+    min-height: 100px;
+    text-align: center;
+    background-color:lightgreen;
+    color: darkslategrey;
+    font-family: arial;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+input[type="text"],input[type="email"]{
+    height: 30px;
+    width: 150px;
+    border: none;
+    
+}
+input[type="button"]{
+    border:none;
+    color: white;
+    background-color: darkred;
+    padding:5px;
+}
+
+
+#retrieved,#matched
+{
+    width: 80%;
+    margin: 40px;
+    padding: 15px;
+    background-color: lightpink;
+    box-shadow: 3px 3px 10px lightsalmon;
+    min-height: 100px;
+    overflow:hidden;
+}
+
+.stringbox
+{
+    border: 2px dotted darkred;
+    padding: 6px;
+    border-radius: 5px;
+    margin: 10px;
+    font-family: Arial;
+    font-size: 16px;
+    min-width: 50px;
+    float:left;
+    background-color: white;
+}
+
+#history{
+    display: none;
+}
+table{
+    border-spacing: 0px;
+}
+th{
+    background-color:  darkmagenta;
+    color:white;
+    
+}
+th,td{
+    
+    padding: 3px;
+}
+
+tr:nth-child(even)
+{
+    background-color: #BFC9CA;
+    
+     
+}
+tr:nth-child(odd){
+    background-color: #F2F3F4;
+    
+}
+
+tr:hover{
+    background-color:black;
+    color: white;
+}

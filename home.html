@@ -1,11 +1,67 @@
 <html>
   <head>
     <script src="script.js"></script>
+      <link href="today.css" rel="stylesheet">
   </head>
   
     <body>
-         
+    <div id="history"  > 
         
-    
+    <div id="slideshow">
+        <img src="images/random.jpg">
+    </div>
+    <div id="form-block">
+        <form>
+            <label for="data">Enter a String</label>
+            <input type="text" name="data"><hr><br><br>
+            <input type="button" value="store" onclick="store()">
+        </form>
+    </div>
+      <div id="form-block2">
+        <form>
+            <label for="data">Enter Regular Expression</label>
+            <input type="text" name="data" onkeyup="check()">
+            
+        </form>
+    </div>
+        
+    <div id="retrieved">
+       <h3> Data stored in the WEBSQL database.....</h3>
+        <hr>
+    </div>
+        
+    <div id="matched">
+       <h3> Strings that are matched.....</h3>
+        <hr>
+        <div id="strings"></div>
+    </div>
+        </div>
+        
+<div id="asynctab">
+        <form action="#" method="post" onsubmit="handledata()">
+        <table>
+             <thead>
+                  <th>Name</th>
+                  <th>Message</th>
+                  <th>Course</th>
+                  <th>Email</th>
+                  <th>Review Date</th>
+            </thead>
+            <tbody id="tdata">
+              <tr>
+            
+                  <td><input type="text" name="name" id="name" required></td>
+                  <td><input type="text" name="message " id="message" style="width:300px" required></td>
+                  <td><input type="text" name="course" id="course" required></td>
+                  <td><input type="email" name="email" id="email" required></td>
+                   <td><input type="submit" value="add"></td>
+              </tr>
+            </tbody>
+       </table>
+                    
+    </form>
+</div>
+<script src="script2.js"></script>
+<script src="script3.js"></script>
     </body>
 </html>

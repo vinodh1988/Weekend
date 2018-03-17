@@ -17,17 +17,29 @@ function insertString(n){
     );
 }
 
-function getAll(){
+function getAll(resolve,reject){
     db.transaction(
+    
     function(tx){
+       
         tx.executeSql("select * from strings",[],function(tx,rs){
+             let  temp=[];
             for(let x=0;x<rs.rows.length;x++)
                 {
-            console.log(rs.rows.item(x).string);
+            //console.log(rs.rows.item(x).string);
+                    temp.push(rs.rows.item(x).string);
+                   
                 }
+            
+            console.log(temp);
+            console.log("Still in function....!");
+            if(temp.length>0)
+             resolve(temp);
+            else
+              reject("no data found");
         })
     });
 }
 //insertString("Brick!!!");
 tableCreate();
-getAll();
+//getAll();
